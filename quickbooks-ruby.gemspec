@@ -16,9 +16,9 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'oauth2', '~> 0.8'
   gem.add_dependency 'roxml', '~> 3.3.1'
-  gem.add_dependency 'activemodel', '> 4.0'
   gem.add_dependency 'nokogiri'  # promiscuous mode
   gem.add_dependency 'multipart-post' # promiscuous mode
+  gem.add_dependency "activemodel", "> 3.0"
 
   # gem.add_development_dependency 'rake', '> 10.0'
   # gem.add_development_dependency 'simplecov', '>= 0.7.1'
