@@ -1,3 +1,10 @@
+# FORK of Quickbooks-Ruby
+
+Changing gem dependencies to make compatible with rails 3
+
+---
+---
+
 # Quickbooks-Ruby
 
 [![Join the chat at https://gitter.im/ruckus/quickbooks-ruby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ruckus/quickbooks-ruby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -653,43 +660,43 @@ $qb = OAuth::Consumer.new($consumer_key, $consumer_secret, {
 
 ## Entities Implemented
 
-Entity            | Create | Update | Query | Delete | Fetch by ID | Other
----               | ---    | ---    | ---   | ---    | ---         | ---
-Account           | yes    | yes    | yes   | yes    | yes         |
-Attachable        | no     | no     | no    | no     | no          |
-Bill              | yes    | yes    | yes   | yes    | yes         |
-Bill Payment      | yes    | yes    | yes   | yes    | yes         |
-Class             | yes    | yes    | yes   | yes    | yes         |
-Company Info      | n/a    | n/a    | yes   | n/a    | yes         |
-Credit Memo       | yes    | yes    | yes   | yes    | no          |
-Customer          | yes    | yes    | yes   | yes    | yes         |
-Department        | yes    | yes    | yes   | yes    | yes         |
-Deposit           | yes    | yes    | yes   | yes    | yes         |
-Employee          | yes    | yes    | yes   | yes    | yes         |
-Entitlements      | no     | no     | no    | no     | no          |
-Estimate          | yes    | yes    | yes   | yes    | yes         |
-Invoice           | yes    | yes    | yes   | yes    | yes         |
-Item              | yes    | yes    | yes   | yes    | yes         |
-Journal Entry     | yes    | yes    | yes   | yes    | yes         |
-Payment           | yes    | yes    | yes   | yes    | yes         |
-PaymentMethod     | yes    | yes    | yes   | yes    | yes         |
-Preferences       | n/a    | no     | yes   | n/a    | yes         |
-Purchase          | yes    | yes    | yes   | yes    | yes         |
-Purchase Order    | yes    | yes    | yes   | yes    | yes         |
-Refund Receipt    | yes    | yes    | yes   | yes    | yes         |
-Sales Receipt     | yes    | yes    | yes   | yes    | yes         |
-Sales Rep         | no     | no     | no    | no     | no          |
-Sales Tax         | no     | no     | no    | no     | no          |
-Sales Term        | no     | no     | no    | no     | no          |
-Tax Agency        | yes    | yes    | yes   | yes    | yes         |
-Tax Code          | no     | no     | yes   | no     | no          |
-Tax Rate          | yes    | yes    | yes   | no     | no          |
-*Tax Service      | yes    | yes    | no    | no     | no          |
-Term              | yes    | yes    | yes   | yes    | yes         |
-Time Activity     | yes    | yes    | yes   | yes    | yes         |
-Tracking Class    | no     | no     | no    | no     | no          |
-Vendor            | yes    | yes    | yes   | yes    | yes         |
-Vendor Credit     | yes    | yes    | yes   | yes    | yes         |
+| Entity         | Create | Update | Query | Delete | Fetch by ID | Other |
+| -------------- | ------ | ------ | ----- | ------ | ----------- | ----- |
+| Account        | yes    | yes    | yes   | yes    | yes         |
+| Attachable     | no     | no     | no    | no     | no          |
+| Bill           | yes    | yes    | yes   | yes    | yes         |
+| Bill Payment   | yes    | yes    | yes   | yes    | yes         |
+| Class          | yes    | yes    | yes   | yes    | yes         |
+| Company Info   | n/a    | n/a    | yes   | n/a    | yes         |
+| Credit Memo    | yes    | yes    | yes   | yes    | no          |
+| Customer       | yes    | yes    | yes   | yes    | yes         |
+| Department     | yes    | yes    | yes   | yes    | yes         |
+| Deposit        | yes    | yes    | yes   | yes    | yes         |
+| Employee       | yes    | yes    | yes   | yes    | yes         |
+| Entitlements   | no     | no     | no    | no     | no          |
+| Estimate       | yes    | yes    | yes   | yes    | yes         |
+| Invoice        | yes    | yes    | yes   | yes    | yes         |
+| Item           | yes    | yes    | yes   | yes    | yes         |
+| Journal Entry  | yes    | yes    | yes   | yes    | yes         |
+| Payment        | yes    | yes    | yes   | yes    | yes         |
+| PaymentMethod  | yes    | yes    | yes   | yes    | yes         |
+| Preferences    | n/a    | no     | yes   | n/a    | yes         |
+| Purchase       | yes    | yes    | yes   | yes    | yes         |
+| Purchase Order | yes    | yes    | yes   | yes    | yes         |
+| Refund Receipt | yes    | yes    | yes   | yes    | yes         |
+| Sales Receipt  | yes    | yes    | yes   | yes    | yes         |
+| Sales Rep      | no     | no     | no    | no     | no          |
+| Sales Tax      | no     | no     | no    | no     | no          |
+| Sales Term     | no     | no     | no    | no     | no          |
+| Tax Agency     | yes    | yes    | yes   | yes    | yes         |
+| Tax Code       | no     | no     | yes   | no     | no          |
+| Tax Rate       | yes    | yes    | yes   | no     | no          |
+| *Tax Service   | yes    | yes    | no    | no     | no          |
+| Term           | yes    | yes    | yes   | yes    | yes         |
+| Time Activity  | yes    | yes    | yes   | yes    | yes         |
+| Tracking Class | no     | no     | no    | no     | no          |
+| Vendor         | yes    | yes    | yes   | yes    | yes         |
+| Vendor Credit  | yes    | yes    | yes   | yes    | yes         |
 
 *JSON only
 
